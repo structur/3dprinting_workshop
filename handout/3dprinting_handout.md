@@ -1,36 +1,43 @@
 Title: 3D printing Workshop 
 
 # Workshop Breakdown
-## Opening Lecture/Remarks (20 - 30 Minutes)
-    + Introduction of 3D printing generally, different methods, processes and the printers used for the workshop
-    + Overview of 3D modeling software
+## Introductions!
+## Opening Presentation andRemarks (20 - 30 Minutes)
+    * Introduction of 3D printing generally, different methods, processes and the printers used for the workshop
+    * Overview of 3D modeling software
         - Overview of what 3D modeling software is
 ## Introduction to Autodesk Fusion (40 minutes - 1 hour)
-    + Basic 3D modeling
+    * Basic 3D modeling
         - A handout will be provide that walks participants through some of features/tools of 123D Design
         - At the end of this section of the workshop the participants will have create 3-4 'base' objects
-    + Sandbox/ Introduction to Making your own 3D object on Fusion (1 hour)
+    * Sandbox/ Introduction to Making your own 3D object on Fusion (1 hour)
         - Using the “base” models created earlier in the workshop participants will create their own models
         - Participants can create their own model if they already have something in mind.
 ## 3D printing time / More Sandbox (40 minutes – 2 hour)
-    + Printing your own 3D object
+    * Printing your own 3D object
         - Participants not ready to print are encouraged to continue working on their object
             - If you don’t finish their object in time you can come back to Studio 307 to model and print later!
-    + Printing using the Makerbot
+    * Printing using the Makerbot
         - Using the Makerbot Desktop software participants will set-up and start a 3D print
 		
-		------
+\pagebreak
 
 # Introduction
 The layout of Autodesk Fusion is comprised of three major parts: The workspace, the toolbar, and the viewing options.
 ## The Workspace
-[comment]: Image of blank workspace
+
+![blank_workspace](./img/blank_workspace.png)
+
 The workspace is where sketches and objects can be created and manipulated. It is represented by a grid, which will scale in size in relation to your project.
 ## The Toolbar
-[comment]: Image of toolbar
+
+![toolbar](./img/toolbar.png)
+
 The toolbar is at the top of the window and contains various features/tools that will allow you to create 3D objects. This session you will be introduced to several, but not all, of these features.
 ## Viewing Options
-[comment]: Image of viewing bar
+
+![viewing](./img/viewing.png)
+
 The viewing options can be found on the right hand side of the window. These will allow you to move the camera and change the property of the object in order to make modeling easier.
 
 **TIP: Right clicking while over the workspace will allow you to “orbit” objects**
@@ -42,37 +49,46 @@ The first object we will be creating is a dice. The goal of this section is to i
 The first thing we need to do is to create a base solid, a cube, for our dice:
 
 Select the **SKETCH** option in the toolbar and click on the **RECTANGLE** option. Then click on the grid in the workspace.
-[comment]: Image of RECTANGLE
+
+![rectangle_tool](./img/1_rectangle_tool.png)
 
 This will cause the grid to expand. To begin sketching click on the **ZERO POINT** (marked by a circle) which will now act as your base point for this object.
-[comment]: Image of ZERO POINT
+
+![zero_point](./img/2_zeropoint.png)
 
 Move your mouse out a bit and the outlines of a rectangle will be sketched.
-[comment]: Image of basic rectangle
+
+![rectangle_dimensions](./img/3_rectdimensions.png)
 
 Enter a value of 25mm for both the length and width (using tab to move between the value boxes) and press enter. Your newly created square will change colours indicating you have **CLOSED** the sketch.
 
-Next, go back to the toolbar and select the **CONSTRUCT** option and click on the **EXTRUDE** tool.
-[comment]: Image of the tool
+![closed_sketch](./img/4_closedsketch.png)
+Next, go back to the toolbar and select the **CREATE** option and click on the **EXTRUDE** tool.
+
+![extrude](./img/5_extrude.png)
 
 Click on your square, input a value of 25mm, and then press enter. You should end up with cube that looks like this:
-[comment]: Image 
-   
+
+![like_this](./img/6_cubelikethis.png)
+
 ## Modifying the Base Solid
 With our base solid now in place we cam start to make it more "dice" like in appearance.
 
 Select the **MODIFY** option and click on the **FILLET** tool
-[comment]: Image 
+
+![modify_fillet](./img/7_mod_fillet.png)
 
 Begin to select the **EDGES** of the cube. They will change in colour once they have been selected.
-[comment]: Image 
+
+![select_edges](./img/8_select_edges.png)
 
 Once all the edges have been selected input a value of 2mm for the fillet radius and press enter.
 
 **TIP: The edges can be fillet individually if you wish.**
 
 The resulting cube should look like this:
-[comment]: Image 
+
+![filleted_cube](./img/9_filleted_cube.png)
 
 ## Making Holes
 The final step in making the dice is to assign values to each face.
@@ -80,28 +96,36 @@ The final step in making the dice is to assign values to each face.
 Selected the **SKETCH** option in the toolbar and click on the **CIRCLE** tool.
 
 To begin your sketch, click one of the faces the dice. This will cause the grid in the workspace to move over top of it.
-[comment]: Image 
+
+![sketch_circle](./img/10_sketch_circle.png)
 
 Move your mouse to the center of the face and click. Move your mouse slightly and the outline of a circle will be project. Input a value of 6mm for the diameter and press enter.
-[comment]: Image 
+
+![cube_top](./img/11_cube_top.png)
 
 **TIP: Rotating the camera so it is directly pointed at the face will make this process easier.**
 
-Select the **CONSTRUCT** option from the toolbar and click on the **EXTRUDE** tool.
-[comment]: Image 
+Select the **CREATE** option from the toolbar and click on the **EXTRUDE** tool.
+
+![cube_top](./img/11_cube_top.png)
 
 From the dropdown menu that appears select the **SUBTRACT** option.
-[comment]: Image 
+
+![first_circle](./img/12_first_circle.png)
 
 Then select the circle you just sketched, input a value of -3mm, and press enter. This will result in a cube that looks like this:
-[comment]: Image 
+
+![extrude_subtract](./img/13_extrude_subtract.png)
 
 ## Finishing Up
 Using the below template assign, values to each of the dice's faces.
-[comment]: Image of dice net
+
+![dice_net](./img/dice_net.png)
 
 The end result should look similar to this:
-[comment]: Image 
+
+![cube_final](./img/14_cube_final.png)
+
 
 **TIP: When subtracting, multiple circles can be selected**
  
@@ -141,7 +165,7 @@ When finished the sketch should look something similar to this:
 [comment]: Image 
 
 ## Revolving
-Select the **CONSTRUCT** option and click on the **REVOLVE** tool.
+Select the **CREATE** option and click on the **REVOLVE** tool.
 
 For a revolve you will need to select both a profile and an axis. For the profile, select the sketch (the shape you have drawn).
 [comment]: Image 
@@ -163,7 +187,7 @@ Select the **SKETCH** option in the toolbar and click on the **ELLIPSE** option.
 Using the Zero Point as your starting point create an input a width of 10 mm and a length of 25 mm.
 [comment]: Image 
 
-Select the **CONSTRUCT** option from the toolbar and click on the **EXTRUDE** tool. Click on the Ellipse and input a value of 10mm. **DO NOT PRESS ENTER YET**
+Select the **CREATE** option from the toolbar and click on the **EXTRUDE** tool. Click on the Ellipse and input a value of 10mm. **DO NOT PRESS ENTER YET**
 [comment]: Image 
 
 Above the preview of the extrude there is a dial that can be moved. This is the push function. Begin to move the wheel and then input a value of 45 degrees and press enter.
@@ -183,7 +207,7 @@ The End result should look like this:
 [comment]: Image 
 
 # Finishing your 3D Models
-Once you’ve finished your 3D model it needs to be exported as an **STL** if you want to 3D print it. To do this...
+Once you’ve finished your 3D model it needs to be exported as an **STL** if you want to 3D print it. To do this, select **FILE** > **3D PRINT** and in the dialogue box, make sure you select "high" refinement, and _uncheck_ "Send to 3D Print Utility". 
 [comment]: Image 
 
 Save your file and you’re ready to 3D print!
