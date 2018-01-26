@@ -200,7 +200,7 @@ Select all the edges that you want to smooth, they will be highlighted in blue w
 ![blue_edge](./img/cup/16_blue_edge.png)
 
 Enter a value of 2 into the radius tab that opens up and your final cup will look like this: 
-![final_cup](./img/cup/17_final_cup.png)
+![final_cup](./img/cup/17_basic_cup.png)
 
 Now that you’ve made a basic cup you can try making vessels using different shapes and drawing tools, here are two examples:  
 
