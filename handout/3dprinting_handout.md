@@ -20,8 +20,6 @@ Title: 3D printing Workshop
     * Printing using the Makerbot
         - Using the Makerbot Desktop software participants will set-up and start a 3D print
 		
-\pagebreak
-
 # Introduction
 The layout of Autodesk Fusion is comprised of three major parts: The workspace, the toolbar, and the viewing options.
 ## The Workspace
@@ -132,53 +130,86 @@ The end result should look similar to this:
 # Object Two – CUP
 In this section of the tutorial, we will work on line construction, line fillet, and revolving 
 ## Creating a Base Sketch
-Select the **SKETCH** option in the toolbar and click on the POLYLINE tool. Then click on the grid in the workspace.
-[comment]: Image 
+Select the **SKETCH** option in the toolbar and click on the **LINE** tool.
+![select_line](./img/cup/1_select_line.png)
 
-Click on the **ZERO POINT** to create a starting point, input a value of 25mm for the distance of the line with an angle of 180 degree, and then press enter
-[comment]: Image 
+Select the plane of the workspace you would like to draw on. 
+![select_plane](./img/cup/2_select_plane.png)
 
-Select the **POLYLINE** tool and click on the end of your newly created line. Input a value of 15mm for the distance with an angle of 90 degrees and then press enter.
-[comment]: Image 
+Click on the **ZERO POINT** to create a starting point for your line.
+![select_zeropoint](./img/cup/3_select_zeropoint.png)
 
-Re-select the **POLYLINE** tool again as click on the end of the line you created in the previous step. Input a value of 25mm with an angle of 180 degrees and then press enter.
-[comment]: Image 
+Input the value of 15mm with an angle of 90 degrees for your first line and then press enter- _To move between boxes click the **TAB** button_. 
 
-Once again, select the **POLYLINE** tool and click the end of the line you created in the last step. Input a value of 10mm with an angle of 90 degrees and then press enter.
-[comment]: Image 
+![line_1](./img/cup/4_line_1.png)
 
-Select the **POLYLINE** tool again and click the end of the previously created line. Input a value of 12.5mm with an angle of 0 degrees and then press enter.
-[comment]: Image 
+Select the **LINE** tool and click on the end point of your first line, creating a second line fragement with the values of 10mm and 90 degrees.
 
-Using the **POLYLINE** tool sketch out enough lines to enclose the base sketch. The end result should look something like this:
-[comment]: Image 
+![line_2](./img/cup/5_line_2.png)
 
-**TIP: the POLYLINE tool can be used to draw multiple lines at once**
-## Modifying the Base Sketch
-Select the **SKETCH** option in the toolbar and click on the **FILLET** tool.
-[comment]: Image 
+Again, select the **LINE** tool and click the end point of your latest line fragment, creating a new line with the values 30 mm and 90 degrees. 
 
-Click out the outer edges and input a value of 2mm for both. (A red outline with be projected to give you a preview of the fillet)
-[comment]: Image 
+![line_3](./img/cup/6_line_3.png)
 
-When finished the sketch should look something similar to this:
-[comment]: Image 
+Once more, select the **LINE** tool again, clicking the end of your latest line and creating another line with the values of 50 mm and 45 degrees.
 
+![line_4](./img/cup/7_line_4.png)
+
+Continue in the same way you have been with the following lines:
+**TIP: the LINE tool can be used to draw multiple lines at once**
+
+* 90mm, 12 degrees
+* 9mm, 90 degrees
+* 89mm, 169 degrees
+
+![line_7](./img/cup/8_line_7.png)
+
+* 29mm, 125 degrees
+* 17mm, 90 degrees 
+* 17.919mm, 180 degrees
+
+![line_10](./img/cup/9_line_10.png)
+
+Enclose your base shape with a final line of 19.053mm and 90 degrees. 
+Your completed shape should look (something) like this: 
+
+![cuplinedrawing](./img/cup/10_cuplinedrawing.png)
+ 
 ## Revolving
-Select the **CREATE** option and click on the **REVOLVE** tool.
 
-For a revolve you will need to select both a profile and an axis. For the profile, select the sketch (the shape you have drawn).
-[comment]: Image 
+Now select the **CREATE** tab and select the **REVOLVE** tool. 
+![create_revolve](./img/cup/11_create_revolve.png)
 
-For the axis select the line in the top right corner.
-[comment]: Image 
+Click on your complete shape so that it’s highlited in blue- this is the _PROFILE_ of the revolve, the shape that will be extruded in a circle. 
 
-Once both the profile and axis have been properly selected, you will be given the option of inputting a value for the revolve. Input 360 degrees and press enter.
-[comment]: Image 
+![blue_light](./img/cup/12_blue_light.png)
 
-The final product should look similar to this:
-[comment]: Image 
-# Object Three – Dish
+To the right of your workspace there is a tab that says **REVOLVE**. In that window, select as the _AXIS_ for the revolve (the line that will be the centre of your shape), click on the second last line you drew (17.919mm 180 degrees) and you will get a 3D shape that looks like this:
+
+![fresh_cup](./img/cup/13_fresh_cup.png)
+
+For another view of your cup, click on the home icon on the top right of your screen. 
+
+![new_view](./img/cup/14_new_view.png)
+
+## Modifying the Cup
+Next, we will smooth the edges of the cup. Under the **MODIFY** tab, select the **FILLET** tool.
+![modify_fillet](./img/cup/15_modify_fillet.png)
+
+Select all the edges that you want to smooth, they will be highlighted in blue when selected. 
+![blue_edge](./img/cup/16_blue_edge.png)
+
+Enter a value of 2 into the radius tab that opens up and your final cup will look like this: 
+![final_cup](./img/cup/17_final_cup.png)
+
+Now that you’ve made a basic cup you can try making vessels using different shapes and drawing tools, here are two examples:  
+
+![shape_revolve_1](./img/cup/18_shape_revolve1.png)
+![shape_revolve_2](./img/cup/19_shape_revolve2.png)
+
+Trying experimenting with cups and opther similar objects, revolving can make a simple shape into an interesting object. If you want to print something like this, just make sure **the object is small (under 2.5cm in height)** and that **there are no overhangs or anglesover 45 degrees into open space**. 
+
+# Object Three – Dish (Incomplete- but you can figure it out!!)
 In this section of the tutorial the push and shell function will be taught
 ## Creating a Base Sketch
 Select the **SKETCH** option in the toolbar and click on the **ELLIPSE** option. Then click on the grid in the workspace.
